@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://shef.com/homemade-food/wp-content/uploads/62460e1038486f1fc22ce529_33726b86.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+h2 {
+    color: brown;
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+.header {
+    background-color: rgb(69, 171, 175);
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header a {
+    color: brown;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.header a.active {
+    background-color: hotpink;
+    color: white;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+/* Responsive design using media queries */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-right {
+        justify-content: center;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .header a {
+        font-size: 16px;
+    }
+}
+
+.form-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: brown;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px;
+    font-size: 16px;
+    background-color: rgb(69, 171, 175);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hotpink;
+}
